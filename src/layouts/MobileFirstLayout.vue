@@ -13,7 +13,7 @@ const cartStore = useCartStore()
   <div class="min-h-screen bg-ivory dark:bg-darkbg text-gray-800 dark:text-gray-100 transition-colors duration-300">
     
     <header class="sticky top-0 z-50 w-full bg-ivory/80 dark:bg-darkbg/80 backdrop-blur-md border-b border-transparent dark:border-gray-800 p-4 md:px-8 flex justify-between items-center shadow-sm dark:shadow-none">
-      <h1 class="text-2xl font-semibold tracking-tight">Catálogo</h1>
+      <h1 class="text-2xl font-semibold tracking-tight">Tienda</h1>
       
       <nav class="hidden md:flex items-center gap-6 mr-auto ml-10">
         <router-link to="/" class="flex items-center gap-2 font-medium transition-colors hover:text-sage dark:hover:text-darkaccent" :class="route.path === '/' ? 'text-sage dark:text-darkaccent' : 'text-gray-500'">

@@ -50,6 +50,7 @@ export default defineConfig({
   ],
   server: {
     host: true,
+    https: true,
     allowedHosts: [
       'scorpion-tusk-phoenix.ngrok-free.dev',
       // O puedes permitir comodines para cualquier subdominio de ngrok:

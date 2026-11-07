@@ -1,12 +1,10 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
-import basicSsl from '@vitejs/plugin-basic-ssl'
 
 export default defineConfig({
   plugins: [
     vue(),
-    basicSsl(),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icons/*.svg'],
@@ -52,7 +50,6 @@ export default defineConfig({
   ],
   server: {
     host: true,
-    https: true,
     allowedHosts: [
       'scorpion-tusk-phoenix.ngrok-free.dev',
       // O puedes permitir comodines para cualquier subdominio de ngrok:

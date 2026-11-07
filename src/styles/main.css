@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+html, body {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* Bloquea el efecto de rebote al llegar al tope o final de la página */
+  overscroll-behavior: none; 
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.hide-scrollbar::-webkit-scrollbar { 
+  display: none; 
+}
+.hide-scrollbar { 
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}

@@ -50,10 +50,11 @@ export default defineConfig({
   ],
   server: {
     host: true,
-    allowedHosts: [
-      'scorpion-tusk-phoenix.ngrok-free.dev',
-      // O puedes permitir comodines para cualquier subdominio de ngrok:
-      '.ngrok-free.dev'
-    ]
+    port: 5173,
+    allowedHosts: true,
+    cors: true,
+    hmr: {
+      clientPort: 443
+    }
   }
 })

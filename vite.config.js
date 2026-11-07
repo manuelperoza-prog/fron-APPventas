@@ -51,7 +51,7 @@ export default defineConfig({
   server: {
     host: true,
     port: 5173,
-    allowedHosts: ['.lhr.life'],
+    allowedHosts: ['bd1ec5eec07b50.lhr.life', '.lhr.life'],
     cors: true,
     hmr: {
       clientPort: 443
